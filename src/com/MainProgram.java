@@ -22,6 +22,12 @@ public class MainProgram {
 		long endTime = System.nanoTime();
 		System.out.println("Exceution time " + (endTime - startTime) + " in milliseconds");
 		System.out.println("Array after sort " + Arrays.toString(list));
+		
+		
+//		start thread
+		FirstThread firstThread = new FirstThread(list);
+		SecondThread secondThread = new SecondThread(list);
+		
 
 	}
 
