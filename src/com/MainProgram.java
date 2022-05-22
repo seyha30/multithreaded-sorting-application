@@ -11,7 +11,7 @@ public class MainProgram {
 		for (int i = 0; i <= length; i++) {
 			for (int j = 0; j <= length - 1; j++) {
 				int temp = lst[j];
-				if (lst[j] > lst[j + 1]) {
+				if (lst[j] >= lst[j + 1]) {
 					lst[j] = lst[j + 1];
 					lst[j + 1] = temp;
 

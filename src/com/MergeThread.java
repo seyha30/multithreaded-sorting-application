@@ -1,10 +1,9 @@
 package com;
 
-public class MergThread  extends Thread{
+public class MergeThread  extends Thread{
 
 	@Override
 	public void run() {
-		
 		super.run();
 	}
 
