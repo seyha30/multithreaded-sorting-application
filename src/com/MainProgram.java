@@ -8,10 +8,12 @@ public class MainProgram {
 		int lst[] = { 7, 12, 19, 3, 18, 4, 2, 6, 15, 8 };
 		int length = lst.length - 1;
 		for (int i = 0; i <= length; i++) {
-			for (int j = i + 1; j <= length; j++) {
+			for (int j = 0; j <= length - 1; j++) {
+                int temp = lst[j];
+				if (lst[j] > lst[j + 1]) {
+					lst[j] = lst[j + 1];
+					lst[j + 1] = temp;
 
-				if (lst[i] < lst[j]) {
-					lst[i] = lst[j];
 				}
 			}
 
