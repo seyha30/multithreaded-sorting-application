@@ -1,10 +1,12 @@
 package com;
 
-public class MergeThread  extends Thread{
+public class FirstThread extends Thread {
 
 	@Override
 	public void run() {
+		
 		super.run();
 	}
+	
 
 }
